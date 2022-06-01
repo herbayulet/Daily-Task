@@ -5,6 +5,7 @@ let dataHandling2 = (x) => {
 
   //   Tanggal Bulan Tahun
   let tanggal = x[3].split("/");
+  //   Menentukan bulan
   let bulan = parseInt(tanggal[1]);
   switch (bulan) {
     case 01:
@@ -47,11 +48,13 @@ let dataHandling2 = (x) => {
       console.log("Gak ada bulan ke 13");
       break;
   }
+  //   Mengganti (/) menjadi (-) dalam proses penanggalan
   let handlingBulan = tanggal.join("-");
-
+  // Sorting dari yang terbesar ke terkecil
   let urut = tanggal.sort((a, b) => b - a);
   console.log(urut);
   console.log(handlingBulan);
+  //   menghapus suatu karakter dalam string
   let nama = x[1].slice(0, 15);
   console.log(nama);
 };
