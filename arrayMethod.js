@@ -57,7 +57,7 @@ let dataHandling2 = (x) => {
   console.log(handlingBulan);
 
   //   menghapus suatu karakter dalam string
-  let nama = x[1].slice(0, 15);
+  let nama = x[1].slice(0, 14);
   console.log(nama);
 };
 dataHandling2(["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1998", "Membaca"]);
