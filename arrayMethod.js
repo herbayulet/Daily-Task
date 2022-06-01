@@ -50,10 +50,12 @@ let dataHandling2 = (x) => {
   }
   //   Mengganti (/) menjadi (-) dalam proses penanggalan
   let handlingBulan = tanggal.join("-");
+
   // Sorting dari yang terbesar ke terkecil
   let urut = tanggal.sort((a, b) => b - a);
   console.log(urut);
   console.log(handlingBulan);
+
   //   menghapus suatu karakter dalam string
   let nama = x[1].slice(0, 15);
   console.log(nama);
